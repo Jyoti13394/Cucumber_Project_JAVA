@@ -9,9 +9,9 @@ public class MainSteps {
     public void user_is_on_landing_page() {
         System.out.println("Written code to navigate to landing page");
     }
-    @When("User login into application")
-    public void user_login_into_application() {
-        System.out.println("Written code to login to application");
+    @When("User login into application using {string} and {string}")
+    public void user_login_into_application(String username, String password) {
+        System.out.println(username + " is the username and " + password + " is the password");
     }
     @Then("Home Page is displayed")
     public void home_page_is_displayed() {
